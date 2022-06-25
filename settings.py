@@ -33,7 +33,7 @@ PLAYER_HEALTH = 1000
 GUN = {}
 GUN['pistol'] = {
     'equipped' : True,
-    'ammo': 149
+    'ammo': 199
 }
 GUN['shotgun'] = {
     'equipped' : False,
@@ -65,7 +65,7 @@ WEAPONS['pistol'] = {
     'bullet_damage':21,
     'bullet_size': 'lg',
     'bullet_count': 1,
-    'clip': 149
+    'clip': 199
 }
 
 WEAPONS['shotgun'] = {
@@ -102,7 +102,10 @@ NIGHT_COLOR = (70,70,70)
 
 # images
 FACE_LOGO = 'player_face.png'
-PLAYER_IMG = 'player.png'
+PLAYER_IMGS = {}
+PLAYER_IMGS['pistol'] = 'player_pistol.png'
+PLAYER_IMGS['shotgun'] = 'player_shotgun.png'
+PLAYER_IMGS['rifle'] = 'player_rifle.png'
 WALL_IMG = 'wall.png'
 ZOMBIE_IMG = 'zombie.png'
 BULLET_IMG = 'bullet.png'
@@ -143,4 +146,5 @@ EFFECTS_SOUND = {'level_start': 'level_start.wav',
                 'health_up': 'health_pack.wav',
                 'gun_pickup': 'gun_pickup.wav',
                 'gun_switch': 'gun_switch.mp3',
-                'empty': 'empty.wav'}
+                'empty': 'empty.wav',
+                'victory': 'victory.mp3'}
